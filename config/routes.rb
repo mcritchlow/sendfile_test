@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # get 'welcome#index'
   # resources :articles
   root 'things#index'
+  get 'file/squirrel' => 'file#squirrel'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
