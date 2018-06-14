@@ -11,7 +11,10 @@ class ThingsController < ApplicationController
   # GET /things/1.json
   def show
     if @thing.name.eql?("John")
-      send_file('squirrel.png', x_sendfile: true)
+      send_file('/private/squirrel.png',
+                type: 'image/png',
+                disposition: 'attachment',
+                x_sendfile: true)
     end
 
   end
