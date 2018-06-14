@@ -1,7 +1,7 @@
 class FileController < ApplicationController
   def squirrel
-    send_file('/private/squirrel.png',
-              type: 'image/png',
+    send_file('private/squirrel.jpeg',
+              type: 'image/jpeg',
               disposition: 'inline',
               x_sendfile: true)
   end
