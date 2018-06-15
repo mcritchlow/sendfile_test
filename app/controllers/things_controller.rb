@@ -11,7 +11,7 @@ class ThingsController < ApplicationController
   # GET /things/1.json
   def show
     if @thing.name.eql?("John")
-      send_file('private/squirrel.jpeg',
+      send_file("#{Rails.root}/private/squirrel.jpeg",
                 type: 'image/jpeg',
                 disposition: 'attachment',
                 x_sendfile: true)
